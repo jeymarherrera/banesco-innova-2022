@@ -42,7 +42,7 @@
                                     </form>
                                     
                                     <div class="text-center">
-                                        <p class="small" href="?op=login">¿No tienes cuenta? Contacte al administrador para ser añadido al sistema</p>
+                                        <p class="small" href="/.">¿No tienes cuenta? Contacte al administrador para ser añadido al sistema</p>
                                     </div>
                                     <div class="text-center">
                                         <a class="small" href="?op=olvido">Ingresar al sistema.</a>
