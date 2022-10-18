@@ -27,6 +27,12 @@ if (isset($_GET['op']))
 
     $controller->Login();
     }
+    elseif ($opcion=="registro"){ //falta
+
+      //Llamo al método ver pasándole la clave que me están pidiendo en registro del home
+  
+      $controller->Registro();
+      }
     elseif ($opcion=="permitido"){
 
         //Llamo al método ver pasándole la clave que me están pidiendo para ingresar al db
