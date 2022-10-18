@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 683.5 293.95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ee5f27;
+      }
+
+      .cls-2 {
+        fill: #228dbb;
+      }
+
+      .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-4 {
+        fill: #1ab47c;
+      }
+
+      .cls-5, .cls-6 {
+        fill: #b62327;
+      }
+
+      .cls-7 {
+        fill: #fcc615;
+        opacity: .76;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #49c4d3;
+      }
+
+      .cls-8, .cls-6 {
+        mix-blend-mode: multiply;
+      }
+
+      .cls-9 {
+        opacity: .82;
+      }
+
+      .cls-10 {
+        fill: #f04c25;
+      }
+
+      .cls-11 {
+        fill: #7c55a1;
+      }
+
+      .cls-12 {
+        fill: #ee8d22;
+      }
+
+      .cls-13 {
+        fill: #2a3780;
+      }
+    </style>
+  </defs>
+  <g class="cls-3">
+    <g id="Capa_2" data-name="Capa 2">
+      <g id="Layer_1" data-name="Layer 1">
+        <g>
+          <rect class="cls-5" x="14.84" y="105" width="188.95" height="188.95"/>
+          <rect class="cls-10" x="14.84" y="105" width="62.1" height="188.95"/>
+          <rect class="cls-11" x="187.61" y="105" width="205.14" height="188.95"/>
+          <polygon class="cls-2" points="495.75 293.95 392.74 105 581.69 105 495.75 293.95"/>
+          <polygon class="cls-4" points="580.49 105 683.5 293.95 494.55 293.95 580.49 105"/>
+          <polygon class="cls-7" points="586.04 227.73 622.13 293.95 555.92 293.95 586.04 227.73"/>
+          <polygon class="cls-6" points="187.61 293.95 76.95 105 187.61 105 187.61 293.95"/>
+          <polygon class="cls-13" points="298.27 293.95 187.61 105 298.27 105 298.27 293.95"/>
+          <path class="cls-9" d="M392.74,105c-52.18,0-94.48,42.3-94.48,94.48s42.3,94.48,94.48,94.48V105Z"/>
+          <path class="cls-8" d="M392.74,293.95c52.18,0,94.48-42.3,94.48-94.48,0-52.18-42.3-94.48-94.48-94.48v188.95Z"/>
+          <g>
+            <path class="cls-12" d="M45.9,0C20.55,0,0,20.55,0,45.9s20.55,45.9,45.9,45.9V0Z"/>
+            <path class="cls-1" d="M45.9,91.79c25.35,0,45.9-20.55,45.9-45.9C91.79,20.55,71.24,0,45.9,0V91.79Z"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
