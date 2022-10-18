@@ -60,8 +60,49 @@
           </button>
         </div>
       </div>
+
+       <!-- About Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="position-relative overflow-hidden rounded ps-5 pt-5 h-100" style="min-height: 400px">
+              <img class="position-absolute w-100 h-100" src="public/img/persona-home.jpg" alt="" style="object-fit: cover"/>
+              
+            </div>
+          </div>
+          <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="h-100">
+              <h1 class="display-6 mb-5">
+                Salud financiera
+              </h1>
+              <p class="fs-5 text-primary mb-4">
+              La libertad de disponer de dinero para el disfrute, es uno de los beneficios de una buena salud financiera.
+              </p>
+              <div class="row g-4 mb-4">
+                <div class="col-sm-6">
+                  <div class="d-flex align-items-center">
+                    <h5 class="mb-0">Por: Miguel Alvarez – 05 de Abril 2021</h5>
+                  </div>
+                </div>    
+              </div>
+              <p class="mb-4">
+              En Banesco Panamá hemos desarrollado el nuevo servicio de Semáforo de Salud Financiera, que te permite visualizar fácilmente tu salud financiera. Este semáforo personalizado es enviado mensualmente, vía correo electrónico y el color que recibas indicará tu salud financiera en Banesco Panamá:
+
+              •  El color verde indica que estás bien.
+
+              •  El color ámbar indica que estas estable.
+
+              •  Y el rojo indica que tienes oportunidades de mejora.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About End -->
       <?php
-    require_once 'view/template/footer.php';
+    require_once 'view/template/footer-home.php';
     ?>
 
     <!-- Boton top -->

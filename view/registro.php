@@ -48,7 +48,7 @@
             <option value="floristeria">Floristeria</option>
             <option value="otra">Otras</option>
           </select>
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
         
         <!-- datos personales -->
@@ -69,7 +69,7 @@
           
           <!-- <div class="button" type="reset" value="Borrar" >Borrar</div> -->
           <br>
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
         
         <!-- datos representantes -->
@@ -89,7 +89,7 @@
             <option value="si">Sí</option>
             <option value="no">No</option>
           </select>
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
 
         <!-- datos encargados -->
@@ -100,7 +100,7 @@
           <input type="text" name="id_encargado" id="id_encargado" placeholder="Cédula o Passaporte" required>
           <input type="text" name="email" id="email" placeholder="Correo" required>
           <!-- <div class="button" type="reset" value="Borrar" >Borrar</div> -->
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
         
         <!-- establecimiento -->
@@ -120,7 +120,7 @@
           <input type="text" name="BARRIADA" id="BARRIADA" placeholder="BARRIADA"> 
           <input type="text" name="CALLE" id="CALLE" placeholder="CALLE" required>
           <input type="text" name="No.LOCAL" id="LOCAL" placeholder="No.LOCAL" required>
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
 
         <!-- sucursales -->
@@ -132,7 +132,7 @@
           <input type="text" name="phone" id="phone" placeholder="Télefono" required>
           <input type="text" name="aporte" id="aporte" placeholder="Promedio de aporte monetario mensual" required>
           <!-- <div class="button" type="reset" value="Borrar" >Borrar</div> -->
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
         
         <!-- documentos -->
@@ -144,7 +144,7 @@
         Inspección Fotografica del la Empresa   </label><input type="file" name="inspeccion"><br><br>
         Firma Digital   </label><input type="file" name="firma"><br><br>
          
-          <div class="button">Next</div>
+          <div class="button">Siguente</div>
         </fieldset>
 
         <!-- terminos y condiciones -->
@@ -158,14 +158,16 @@
         Asimismo, exonero(amos)de cualquier consecuencia o responsabilidad resultante del ejercicio de solicitar o suministrar información, o por razón de cualesquiera autorizaciones contenidas en la presente carta, a Banesco, S. A., a sus compañías afiliadas, subsidiarias, cesionarios y/o sucesoras, a sus empleados, ejecutivos, directores dignatarios o apoderados, así como cualquier compañía que por una operación de cesión, administración o compra de cartera adquiera los derechos de mi crédito.</p><br>
         <p><b>QUEDA ENTENDIDO QUE EL BANCO SUMINISTRARÁ A REQUERIMIENTO DEL INTERESADO TODA LA INFORMACIÓN CREDITICIA RECOPILADA EN BASE A LA PRESENTE AUTORIZACIÓN.
         </b></p></div><br><br>
-         
-          <div class="button">Next</div>
+        <p>Para entrar al programa debes aceptar nuestros términos del servicio<br>
+        <label><input type="checkbox" name="terminos" required> Acepto los términos y condiciones</label><br>
+        <br></p>
+          <div class="button">Siguente</div>
         </fieldset>
       </form>
     </div>
   </main>
-      <!-- links javascript -->
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- links javascript -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="public/lib/wow/wow.min.js"></script>
     <script src="public/lib/easing/easing.min.js"></script>

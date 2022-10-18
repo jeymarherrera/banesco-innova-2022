@@ -25,4 +25,5 @@
           <a href="contact.html" class="nav-item nav-link"></a>
         </div>
       </div>
+      <a href="?op=registro" class="btn btn-primary px-3 d-none d-lg-block">Registrate</a>
     </nav>
