@@ -6,21 +6,46 @@ require("./controller/Controller.php");
 //Instancio el controlador
 $controller = new Controller;
 
-if (isset($_GET['op'])) {
+if (isset($_GET['op']))
+{
+    $opcion=$_GET['op'];
+    if ($opcion=="acceder"){
+    //Llamo al método ver pasándole la clave que me están pidiendo en signin
+        
+    $controller->Ingresar();
 
-  $opcion = $_GET['op'];
+    }
+    elseif ($opcion=="registrar"){ //falta
 
-  if ($opcion == "crear") {
-    $controller->Acceder();
-  } elseif ($opcion == "correcto") {
-    $controller->AccederDashboard();
-  } elseif ($opcion == "olv") {
-    $controller->RecuperarCuenta();
-  } else {
-    $controller->Index();
-  }
-} else {
+      //Llamo al método ver pasándole la clave que me están pidiendo en registro del home
+  
+      $controller->GuardarDatos();
+      }
+    elseif ($opcion=="login"){ //falta
 
-  //Llamo al método por defecto del controlador
-  $controller->Index();
+    //Llamo al método ver pasándole la clave que me están pidiendo en registro del home
+
+    $controller->Login();
+    }
+    elseif ($opcion=="permitido"){
+
+        //Llamo al método ver pasándole la clave que me están pidiendo para ingresar al db
+    
+        $controller->IngresarDashboard();
+    } 
+    elseif ($opcion=="olvido"){
+
+      //Llamo al método ver pasándole la clave que me están pidiendo para ingresar al db
+  
+      $controller->RecuperarCuenta();
+  } 
+    else{
+
+    //Llamo al método por defecto del controlador
+        $controller->Index();
+    }
 }
+else{
+        //Llamo al método por defecto del controlador
+        $controller->Index();
+    }

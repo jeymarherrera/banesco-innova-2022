@@ -1,11 +1,11 @@
 <!-- model cliente -->
 
 <?php
+require_once 'model/db.php';
 class Cliente
 {
 	private $pdo;
-	private $msg;
-    
+	private $msg;  
     public $nombre;
     public $apellido;  
     public $email;

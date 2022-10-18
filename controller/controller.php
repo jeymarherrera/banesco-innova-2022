@@ -19,7 +19,29 @@ class Controller
         require("view/home.php");
     }  
 
-    public function Acceder()
+    public function Login(){
+        //Le paso los datos a la vista
+        require("view/signin.php");
+    }  
+
+    public function AccederDashboard() {
+        require("view/dashboard.php");
+    }
+
+    public function GuardarDatos(){
+        $usuario = new Cliente();
+        
+        $usuario->nombre = $_REQUEST['nombre'];
+        $usuario->apellido = $_REQUEST['apellido'];
+        $usuario->email = $_REQUEST['correo'];  
+        $usuario->pass = md5($_REQUEST['password1']);    
+      
+        $this->resp= $this->model->Registrar($usuario);
+
+        header('Location: ?op=crear&msg='.$this->resp);
+    }
+
+    public function Ingresar()
     {
         $ingresarUsuario = new Cliente();
 
@@ -30,7 +52,7 @@ class Controller
         if ($resultado = $this->model->Consultar($ingresarUsuario)) {
             $_SESSION["acceso"] = true;
             $_SESSION["user"] = $resultado->nombre . " " . $resultado->apellido;
-            header('Location: ?op=correcto');
+            header('Location: ?op=permitido');
         }
         else {
             header('Location: ?&msg=Usuario o contraseña incorrecto, intentelo otra vez');
@@ -42,7 +64,5 @@ class Controller
         require("view/forgot-password.php");
     }
 
-    public function AccederDashboard() {
-        require("view/dashboard.php");
-    }
+    
 }

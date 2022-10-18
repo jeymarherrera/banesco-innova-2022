@@ -15,15 +15,11 @@
 
 <body id="page-top">
     <?php
-    require_once 'view/template/header-admin.php';
+    require_once 'view/template/header.php';
     ?>
     <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <img src="public/img/logo/logo.png" alt="">
-                </div>
-            </a>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.html"></a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
                 <a class="nav-link" href="index.html">
@@ -512,7 +508,7 @@
             </div>
             <!-- footer -->
             <?php
-            require_once 'view/template/footer-admin.php';
+            require_once 'view/template/footer.php';
             ?>
         </div>
     </div>
