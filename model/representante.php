@@ -2,7 +2,7 @@
 
 <?php
 require_once 'model/db.php';
-class Cliente
+class Representante
 {
 	private $pdo;
 	private $msg;
@@ -27,7 +27,7 @@ class Cliente
 		}
 	}
 
-	public function Registrar(Cliente $data)
+	public function RegistrarRepre(Representante $data)
 	{
 		try {
 			$sql = "INSERT INTO representante (identifiacion,nombre,apellido,telefono,correo,cargo,direccion,ciudadania,id_cliente) 

@@ -16,7 +16,6 @@ class Cliente
 	public $identificaion_img;
 	public $id_sociedad;
 
-
 	public function __CONSTRUCT()
 	{
 		try {
@@ -26,10 +25,10 @@ class Cliente
 		}
 	}
 
-	public function Registrar(Cliente $data)
+	public function RegistrarCliente(Cliente $data)
 	{
 		try {
-			$sql = "INSERT INTO usuario (identifiacion,nombre,apellido,nacionalidad,telefono,correo,identificacion_img,id_sociedad) 
+			$sql = "INSERT INTO usuario (identifiacion,nombre,apellido,nacionalidad,telefono,correo,id_sociedad) 
 		        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 			$this->pdo->prepare($sql)
@@ -41,7 +40,6 @@ class Cliente
 						$data->nacionalidad,
 						$data->telefono,
 						$data->correo,
-						$data->identifiacion_img,
 						$data->id_sociedad
 					)
 				);

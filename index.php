@@ -37,7 +37,7 @@ if (isset($_GET['op']))
 
         //Llamo al método ver pasándole la clave que me están pidiendo para ingresar al db
     
-        $controller->IngresarDashboard();
+        $controller->AccederDashboard();
     } 
     elseif ($opcion=="olvido"){
 
