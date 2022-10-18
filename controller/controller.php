@@ -6,6 +6,7 @@ session_start();// Comienzo de la sesión
 require("model/cliente.php");
 require("model/clienteServicio.php");
 require("model/representante.php");
+require("model/documento.php");
 class Controller
 {
     private $modelCli;
@@ -51,7 +52,7 @@ class Controller
         $cliente->nacionalidad = $_REQUEST['nacionalidad'];
         $cliente->telefono = $_REQUEST['telefono'];
         $cliente->correo = $_REQUEST['correo'];  
-        $cliente->id_sociedad = $_REQUEST['id_sociedad'];
+        $cliente->id_sociedad = $_REQUEST['Sociedad'];
         $this->resp= $this->modelCli->RegistrarCliente($cliente);
 
         $representante = new Representante();
@@ -67,11 +68,13 @@ class Controller
         $representante->id_cliente = $_REQUEST['id_cliente'];
          $this->resp = $this->modelRepre->RegistrarRepre($representante);
 
-        $clienteServicio = new ClienteServicio();
+        /* $clienteServicio = new ClienteServicio();
 
-        $clienteServicio->idServicio = $_REQUEST['idServicio'];
+        $clienteServicio->idServicio = $_REQUEST['idServicio']; */
 
-
+        $documento = new Documento();
+        $documento->ID_CLIENTE = $_REQUEST[''];
+        
         header('Location: ?op=crear&msg='.$this->resp);
     }
 
@@ -79,20 +82,21 @@ class Controller
 
     public function Ingresar()
     {
-        $ingresarUsuario = new Cliente();
+        /* $ingresarUsuario = new Cliente();
 
         $ingresarUsuario->email = $_REQUEST['correo'];
         $ingresarUsuario->pass = ($_REQUEST['contrasena']);
 
         //Verificamos si existe en la base de datos
-        if ($resultado = $this->model->Consultar($ingresarUsuario)) {
+        if ($resultado = $this->modelCli->Consultar($ingresarUsuario)) {
             $_SESSION["acceso"] = true;
             $_SESSION["user"] = $resultado->nombre . " " . $resultado->apellido;
             header('Location: ?op=permitido');
         }
         else {
             header('Location: ?&msg=Usuario o contraseña incorrecto, intentelo otra vez');
-        }
+        } */
+        require("view/dashboard.php");
     }
 
     public function RecuperarCuenta()

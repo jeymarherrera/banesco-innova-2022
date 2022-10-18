@@ -29,12 +29,12 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">¡Bienvenido de vuelta!</h1>
                                     </div>
-                                    <form class="user" method="POST" action="./?op=acceder">
+                                    <form class="user" method="POST" action="?op=acceder" >
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ingrese su correo..." required>
+                                            <input type="email" name="correo" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ingrese su correo..." required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Ingrese su contraseña" required>
+                                            <input type="password" name="contrasena" class="form-control form-control-user" id="exampleInputPassword" placeholder="Ingrese su contraseña" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="custom-control custom-checkbox small">
@@ -42,9 +42,10 @@
                                                 <label class="custom-control-label" for="customCheck">Recordar</label>
                                             </div>
                                         </div>
-                                        <a href="signin.php" class="btn btn-primary btn-user btn-block" type="submit">
+                                      <!--   <a href" class="btn btn-primary btn-user btn-block" type="submit">
                                             Iniciar Sesión
-                                        </a>
+                                        </a> -->
+                                        <button  class="btn btn-primary btn-lg btn-block" type="submit">Iniciar sesion</button>
                                         <hr>
                                     </form>
                                     <div class="text-center">

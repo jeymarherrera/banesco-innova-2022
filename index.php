@@ -11,7 +11,6 @@ if (isset($_GET['op']))
     $opcion=$_GET['op'];
     if ($opcion=="acceder"){
     //Llamo al método ver pasándole la clave que me están pidiendo en signin
-        
     $controller->Ingresar();
 
     }

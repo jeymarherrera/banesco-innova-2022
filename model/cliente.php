@@ -57,7 +57,7 @@ class Cliente
 	public function Consultar(Cliente $data)
 	{
 		try {
-			$stm = $this->pdo->prepare("SELECT * FROM usuario WHERE email = ? AND pass=?");
+			$stm = $this->pdo->prepare("SELECT * FROM cliente WHERE corre = ? AND pass=?");
 			$stm->execute(array($data->email, $data->pass));
 			return $stm->fetch(PDO::FETCH_OBJ);
 		} catch (Exception $e) {

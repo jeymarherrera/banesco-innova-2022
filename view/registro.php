@@ -38,12 +38,12 @@
         <li>Documentación</li>
         <li>Términos y Condiciones</li>
       </ul>
-      <form class="form-wrapper">
+      <form class="form-wrapper" method="POST" action="./?op=registrar">
         <fieldset class="section is-active">
           <h3>Ingrese su tipo de empresa</h3>
              <!-- validar en php -->
           <label for="lang">Empresa</label>
-          <select name="lenguajes" id="lang">
+          <select name="lang" id="lang">
             <option value="casino">Casino</option>
             <option value="artesano">Artesano</option>
             <option value="floristeria">Floristeria</option>
@@ -54,9 +54,14 @@
         
         <fieldset class="section">
           <h3>Ingrese sus datos personales</h3>
-          <input type="text" name="name" id="name" placeholder="Nombre" required>
-          <input type="text" name="lastname" id="lastname" placeholder="Apellido" required>
-          <input type="text" name="id_cliente" id="id_cliente" placeholder="Cédula o Passaporte" required>
+          <label for="NOMBRE">Es usted Persona?</label>
+          <select name="Sociedad" id="NOMBRE">
+            <option value="Juridica">Juridica</option>
+            <option value="Natural">Natural</option>
+          </select>
+          <input type="text" name="nombre" id="name" placeholder="Nombre" required>
+          <input type="text" name="apellido" id="lastname" placeholder="Apellido" required>
+          <input type="text" name="identificacion" id="id_cliente" placeholder="Cédula o Passaporte" required>
           <input type="text" name="nacionalidad" id="nacionalidad" placeholder="Nacionalidad" required>
           <input type="text" name="telefono" id="phone" placeholder="Télefono" required>
           <input type="text" name="correo" id="email" placeholder="Correo" required>
@@ -66,6 +71,7 @@
           <br>
           <div class="button">Siguente</div>
         </fieldset>
+
         
         <fieldset class="section">
         <h3>Ingrese los datos del representante</h3>
