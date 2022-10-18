@@ -35,17 +35,16 @@
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Ingrese su correo..." required>
                                         </div>
-                                        <a href="signin.php" class="btn btn-primary btn-user btn-block" type="submit">
+                                        <a href="?op=login" class="btn btn-primary btn-user btn-block" type="submit">
                                             Recuperar Contraseña
                                         </a>
                                         <hr>
                                     </form>
-                                    
                                     <div class="text-center">
-                                        <p class="small" href="/.">¿No tienes cuenta? Contacte al administrador para ser añadido al sistema</p>
+                                        <p class="small" >¿No tienes cuenta? Contacte al administrador para ser añadido al sistema</p>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="?op=olvido">Ingresar al sistema.</a>
+                                        <a class="small" href="?op=login">Ingresar al sistema.</a>
                                     </div>
                                 </div>
                             </div>

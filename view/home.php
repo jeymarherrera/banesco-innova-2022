@@ -17,6 +17,7 @@
   <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
   <link href="public/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
   <link href="public/css/style.css" rel="stylesheet" />  
+  <link href="public/css/registo.css" rel="stylesheet" /> 
   </head>
 
   <body>
@@ -90,23 +91,9 @@
 
     <!-- registro -->
     <div class="container">
-    <div class="main">
-    <h2>Formulario 1</h2>
-      <form action="form2.php" method="post">
-    <label>Nombre :</label>
-    <input name="nombre" type="text" placeholder="nombre y apellido" required>
-    <label>Email :</label>
-    <input name="email" type="email" placeholder="mimail@dominio.com" required>
-    <label>Domiclio :</label>
-    <input name="domicilio" type="text" placeholder="calle y numero" required>
-    <label>Telefono :</label>
-    <input name="telefono" type="text" placeholder="999 999 999" />
-    <label>Telefono movil :</label>
-    <input name="movil" type="text" placeholder="+34999999999" >
-    <input type="reset" value="Borrar" />
-    <input type="submit" value="Siguiente" />
-    </form>
-    </div>
+    <?php
+    require_once 'view/registros/registro.php';
+    ?>
     </div>
 
     <footer id="footer">
@@ -183,5 +170,6 @@
     <script src="public/lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="public/lib/counterup/counterup.min.js"></script>
     <script src="public/js/main.js"></script>
+    <script src="public/js/registro.js"></script>
   </body>
 </html>
