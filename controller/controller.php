@@ -4,6 +4,7 @@
 session_start();// Comienzo de la sesión
 
 require("model/cliente.php");
+require("model/clienteServicio.php");
 class Controller
 {
     private $model;
@@ -31,12 +32,21 @@ class Controller
     public function GuardarDatos(){
         $usuario = new Cliente();
         
+        $usuario->identificaion = $_REQUEST['identifiacion'];
         $usuario->nombre = $_REQUEST['nombre'];
         $usuario->apellido = $_REQUEST['apellido'];
-        $usuario->email = $_REQUEST['correo'];  
-        $usuario->pass = md5($_REQUEST['password1']);    
-      
+        $usuario->apellido = $_REQUEST['nacionalidad'];
+        $usuario->telefono = $_REQUEST['telefono'];
+        $usuario->correo = $_REQUEST['correo'];  
+        $usuario->identificaion_img = $_REQUEST['identificacion_img'];
+        $usuario->id_sociedad = $_REQUEST['id_sociedad'];
         $this->resp= $this->model->Registrar($usuario);
+
+
+        $clienteServicio = new ClienteServicio();
+
+        $clienteServicio->idServicio = $_REQUEST['idServicio'];
+
 
         header('Location: ?op=crear&msg='.$this->resp);
     }

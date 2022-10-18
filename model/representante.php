@@ -1,4 +1,4 @@
-<!-- model cliente -->
+<!-- model representante -->
 
 <?php
 require_once 'model/db.php';
@@ -10,11 +10,12 @@ class Cliente
 	public $identificaion;
 	public $nombre;
 	public $apellido;
-	public $nacionalidad;
-	public $telefono;
+    public $telefono;
 	public $correo;
-	public $identificaion_img;
-	public $id_sociedad;
+	public $cargo;
+	public $direccion;
+	public $ciudadania;
+    public $id_cliente;
 
 
 	public function __CONSTRUCT()
@@ -29,20 +30,21 @@ class Cliente
 	public function Registrar(Cliente $data)
 	{
 		try {
-			$sql = "INSERT INTO usuario (identifiacion,nombre,apellido,nacionalidad,telefono,correo,identificacion_img,id_sociedad) 
+			$sql = "INSERT INTO representante (identifiacion,nombre,apellido,telefono,correo,cargo,direccion,ciudadania,id_cliente) 
 		        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 			$this->pdo->prepare($sql)
 				->execute(
 					array(
-						$data->identificaion,
-						$data->nombre,
-						$data->apellido,
-						$data->nacionalidad,
-						$data->telefono,
-						$data->correo,
-						$data->identifiacion_img,
-						$data->id_sociedad
+                        $data->identificaion,
+                        $data->nombre,
+                        $data->apellido,
+                        $data->telefono,
+                        $data->correo,
+                        $data->cargo,
+                        $data->direccion,
+                        $data->ciudadania,
+                        $data->id_cliente,
 					)
 				);
 			$this->msg = "Su registro se ha guardado exitosamente!&t=text-success";
@@ -54,16 +56,5 @@ class Cliente
 			}
 		}
 		return $this->msg;
-	}
-
-	public function Consultar(Cliente $data)
-	{
-		try {
-			$stm = $this->pdo->prepare("SELECT * FROM usuario WHERE email = ? AND pass=?");
-			$stm->execute(array($data->email, $data->pass));
-			return $stm->fetch(PDO::FETCH_OBJ);
-		} catch (Exception $e) {
-			die($e->getMessage());
-		}
 	}
 }
