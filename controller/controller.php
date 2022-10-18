@@ -16,7 +16,7 @@ class Controller
 
     public function Index(){
         //Le paso los datos a la vista
-        require("view/home.php");
+        require("view/registro.php");
     }  
 
     public function Login(){

@@ -1,4 +1,30 @@
-<div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto Innova - Banisco</title>
+  <link href="public/img/logo/logo-innovacion.svg" rel="icon">
+  <link href="public/img/logo/logo-innovacion.svg" rel="icon">
+  <link href="public/img/favicon.ico" rel="icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>   
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"/>
+  <link href="public/lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="public/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet"/>
+  <link href="public/css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+  <link href="public/css/style.css" rel="stylesheet" />  
+  <link href="public/css/registo.css" rel="stylesheet" /> 
+</head>
+<body>
+<?php
+  require_once 'view/template/header-home.php';
+  ?>
+    <!-- registro -->
+    <main>
     <div class="wrapper">
       <ul class="steps">
         <li class="is-active">Step 1</li>
@@ -47,4 +73,7 @@
         </fieldset>
       </form>
     </div>
-  </div>
+  </main>
+
+</body>
+</html>
